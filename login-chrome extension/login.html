@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HP Supreme Bot</title>
+    <script src="jquery.js"></script>
+    <!-- <script src="node_modules/auth0-js/build/auth0.js"></script> -->
+	<script src="auth0_min.js"></script>
+	<!--<script type="text/javascript">
+  		var webAuth = new auth0.WebAuth({
+    		domain:       'hpbots.auth0.com',
+    		clientID:     'KLltWEciG7Vsyj105mXJ4pW_RPCWOSq7',
+    		redirectUri: 'https://emenoagkcjejkofhconliaemfnlmobcl.chromiumapp.org/auth0'
+  		});
+	</script>-->
+	<script src="login.js"></script> 
+	<!--<script src="test_login.js"></script>-->
+</head>
+
+<link rel="stylesheet" href="login.css">
+<body>
+
+<div class="bg">
+	<label for="bg">User Login</label>
+	<!--<label for="login-email">Email</label>-->
+	<input type="text" class="login-input" id="login-email" placeholder="Email"></input>
+	<!--<label for="login-token">Token</label>-->
+	<input type="text" class="login-input" id="login-token" placeholder="Token"></input>
+	<button type="submit" id="btn-login">Login</button>
+	<button id="open_test">open</button>
+
+	</div>
+</body>
+</html>

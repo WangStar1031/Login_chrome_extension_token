@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HP Supreme Bot</title>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<link rel="stylesheet" href="popup.css">
+<body>
+	<button class ="start-btn">Start</button>
+	<button id="items-btn" class ="items-btn">Tasks</button>
+	<button id="restock-btn" class ="restocks-btn">Restocks</button>
+	<button id="checkout-btn"class ="checkout-btn">Checkout</button>
+	<button id="time-btn" class="timer">Timer</button>
+	<select id="select-task" class="task">
+	</select>
+	<label for="task">Running:</label>
+	<label id="autobuy-switch" class="switch">
+  	<input id="autobuy-checkbox" type="checkbox">
+  	<span id="autobuy-slider" class="slider"></span>
+	</label>
+	<label for="switch">Autobuy:</label>
+	<label for="checkout-ms">ms</label>
+	<input type="number" id="checkout-ms" value="0000" disabled="disabled"></input>
+	<label for="checkout-delay">Checkout Delay:</label>
+	<label class="HP-logo">preme-HP</label>         
+	<label class="by-HP">by hype_pickups</label>
+	<button id="logout">Log out</button>
+	<script src="./jquery.js"></script>
+	<script src="popup.js"></script>
+</body>
+</html>

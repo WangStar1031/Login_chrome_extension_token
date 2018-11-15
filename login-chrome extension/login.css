@@ -1,0 +1,67 @@
+* {
+	outline: none;
+}
+
+body {
+	margin: 0;
+	width: 250px;
+	height: 350px;
+}
+
+.bg {
+	background-color: #262626;
+	/*background-color: #292b2f;*/
+	background-position: center;
+	background-size: cover;
+	height: 390px;
+	width: 2550px;
+}
+label[for="login-email"], label[for="login-token"], label[for="bg"]{
+	position: absolute;
+	left: 22.5%;
+	color: #bf0d33;
+}
+label[for="bg"] {
+	top: 19%;
+	left: 23%;
+	font-size: 20pt;
+}
+label[for="login-email"] {
+	top: 15%;
+}
+label[for="login-token"] {
+	top: 35%;
+}
+.login-input {
+	height: 28px;
+	width: 165px;
+	position: absolute;
+	left: 15%;
+	background-color: #262626;
+	color: #bf0d33;
+	border: 2px solid #bf0d33;
+	border-radius: 5px;
+	padding-left: 5px;
+	font-size: 10pt;
+	/*border-left: none;
+	border-right: none;
+	border-top: none;*/
+}
+#login-email {
+	top: 33%;
+}
+#login-token {
+	top: 48%;
+}
+#btn-login {
+	height: 40px;
+	width: 170px;
+	position: absolute;
+	top: 66%;
+	left: 15%;
+	background-color: #bf0d33;
+	color: white;
+	border: 2px solid #bf0d33;
+	font-size: 12pt;
+	border-radius: 5px;
+}

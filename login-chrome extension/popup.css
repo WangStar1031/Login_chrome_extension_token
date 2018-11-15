@@ -1,0 +1,200 @@
+body {
+	margin: 0;
+	width: 250px;
+	height: 390px;
+	background-color: #171717;
+}
+
+@font-face {
+    font-family: 'supreme-font';
+    src: url(./supreme.otf);
+}
+* {
+	outline: none;
+}
+
+button {
+	cursor: pointer;
+	background-color: #900926;
+	border: 2px solid #900926;
+	font-family: inherit;
+	font-weight: 100;
+	font-size: 7pt;
+	color: white;
+	position:absolute;
+    transition: .5s ease;
+    border-radius: 2.5px;
+}
+.start-btn:hover {
+	box-shadow: 0px 0px 20px #bf0d33;
+}
+.HP-logo {
+	position: absolute;
+	top: 15px;
+	left: 80px;
+	color: white;
+	font-weight: lighter;
+	font-size: 16pt;
+	font-family: inherit;
+}
+.by-HP {
+	position: absolute;
+	top: 376px;
+	left: 93px;
+	color: white;
+	font-weight: lighter;
+	font-size: 6pt;
+	font-family: inherit;
+}
+
+.items-btn {
+	width: 150px;
+	height: 25px;
+    top: 60px;
+    left: 50px;
+}
+.checkout-btn {
+	width: 150px;
+	height: 25px;
+    top: 100px;
+    left: 50px;
+}
+
+.restocks-btn {
+	width: 150px;
+	height: 25px;
+    top: 140px;
+    left: 50px;
+}
+
+.timer {
+	width: 150px;
+	height: 25px;
+    top: 180px;
+    left: 50px;
+}
+.start-btn {
+	width: 150px;
+	height: 35px;
+    top: 333px; /* or 85% */
+    left: 50px;
+    font-size: 11pt;
+}
+.switch {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+#autobuy-switch {
+	width: 55px;
+  	height: 20px;
+  	top: 260px;
+  	left: 130px;
+}
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #605e5e;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 5px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #bf0d33;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #bf0d33;
+}
+
+input:checked + #autobuy-slider:before {
+  -webkit-transform: translateX(33px);
+  -ms-transform: translateX(33px);
+  transform: translateX(33px);
+}
+input:checked + #dropday-slider:before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(23px);
+}
+label[for="switch"] {
+	position: absolute;
+	top: 263px;
+	left: 57px;
+	color: #bf0d33;
+	font-size: 8pt;
+
+}
+
+#checkout-ms {
+	position: absolute;
+	top: 293px;
+	left: 130.5px;
+	background-color: transparent;
+	color: #605e5e;
+	font-weight: 600;
+	font-size: 9pt;
+	border-color: #605e5e;
+	border-radius: 2.5px;
+	height: 18px;
+	width: 40px;
+	padding-left: 8px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+label[for="checkout-delay"] {
+	position: absolute;
+	top: 298px;
+	left: 35.5px;
+	color: #605e5e;
+	font-size: 8pt;
+}
+label[for="checkout-ms"] {
+	position: absolute;
+	top: 293px;
+	left: 186.5px;
+	color: #605e5e;
+	font-size: 7pt;
+}
+label[for="task"] {
+	position: absolute;
+	top: 227px;
+	left: 57px;
+	color: #bf0d33;
+	font-size: 8pt;
+}
+#select-task {
+	position: absolute;
+	top: 222px;
+	left: 118px;
+	height: 25px;
+	width: 80px;
+	background-color: transparent;
+	color: #bf0d33;
+	border: 1px solid #bf0d33;
+}
